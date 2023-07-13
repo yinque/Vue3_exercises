@@ -1,0 +1,38 @@
+/*
+global style
+ */
+html,body{
+  background-color: #EEEEEE;
+}
+
+
+
+/*debug use*/
+.block{
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.big{
+  width: 800px;
+  height: 800px;
+}
+.mid{
+  width: 400px;
+  height: 400px;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.yellow {
+  background-color: rgb(255, 213, 59);
+}
+.board {
+  padding: 0.5em;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border-radius: 0.3em;
+}
