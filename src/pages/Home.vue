@@ -4,15 +4,9 @@
 
 <template>
   <div class="home">
-    Home
+    <router-link to="/StateTest">/StateTest</router-link>
   </div>
 </template>
 
 <style scoped>
 </style>
-
-<script>
-export default {
-  name: "Home"
-}
-</script>
