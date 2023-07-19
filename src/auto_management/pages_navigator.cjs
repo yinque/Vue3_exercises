@@ -59,10 +59,12 @@ class RouterModel{
         }
     }
     makeRoutes(){
-        // const prefix = "const routes = [\n\t"
-        // const suffix = ",\n]"
-        // const separator = ",\n\t"
-        return "const routes = " + JSON.stringify(this.router_list,null,'\t')
+        const prefix = "const routes = [\n\t"
+        const suffix = ",\n]"
+        const separator = ",\n\t"
+        return prefix +
+            this.router_list.map(e=>`{path: '${e.path}', component: ${e.component}}`).join(separator) +
+            suffix
     }
     makeImports(){
         return this.import_list.map(e=>`import ${e.component} from "${e.import_name}";`).join("\n")
@@ -85,7 +87,9 @@ const router_list = ${JSON.stringify(this.router_list,null,'\t')}
 
 <template>
   <div class="home">
-    <router-link v-for="r in router_list" :to="r.path">{{r.path}}</router-link>
+    <div v-for="r in router_list">
+      <router-link :to="r.path">{{r.path}}</router-link>
+    </div>
   </div>
 </template>
 
@@ -99,7 +103,7 @@ const rm = new RouterModel({
     "/Home": "/"
 })
 
-// fs.writeFileSync(ROUTER_TS_FILE,rm.makeRouterTs(),"utf-8")
-// fs.writeFileSync(HOME_VUE_FILE,rm.makeHomeVue(),"utf-8")
-console.log(rm.makeRouterTs())
-console.log(rm.makeHomeVue())
+fs.writeFileSync(ROUTER_TS_FILE,rm.makeRouterTs(),"utf-8")
+fs.writeFileSync(HOME_VUE_FILE,rm.makeHomeVue(),"utf-8")
+// console.log(rm.makeRouterTs())
+// console.log(rm.makeHomeVue())
