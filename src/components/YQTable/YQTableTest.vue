@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 
+import YQTable from "./YQTable.vue";
 </script>
 
 <template>
   <div class="yq-table-test">
-    YQTableTest
+    <YQTable></YQTable>
   </div>
 </template>
 

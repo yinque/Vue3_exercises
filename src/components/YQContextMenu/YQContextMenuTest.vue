@@ -27,7 +27,7 @@ function handleRC(event){
 
 <template>
   <div class="menu-test">
-    MenuTest
+    YQContextMenuTest
     <div class="yellow block big" @click.right="handleRC">
     </div>
   </div>

@@ -6,6 +6,18 @@ const router_list = [
 		"component": "Home"
 	},
 	{
+		"path": "/component_test/ContextMenuTest",
+		"component": "ContextMenuTest"
+	},
+	{
+		"path": "/component_test/DialogTest",
+		"component": "DialogTest"
+	},
+	{
+		"path": "/component_test/TableTest",
+		"component": "TableTest"
+	},
+	{
 		"path": "/draggable/DraggableDemo",
 		"component": "DraggableDemo"
 	},
