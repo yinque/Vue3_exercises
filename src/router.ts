@@ -1,20 +1,22 @@
-import ContextMenuTest from "./pages/component_test/ContextMenuTest.vue";
-import DialogTest from "./pages/component_test/DialogTest.vue";
-import TableTest from "./pages/component_test/TableTest.vue";
+import ContextMenuTest from "./pages/components/ContextMenuTest.vue";
+import DialogTest from "./pages/components/DialogTest.vue";
+import TableTest from "./pages/TableTest.vue";
 import DraggableDemo from "./pages/draggable/DraggableDemo.vue";
 import Home from "./pages/Home.vue";
 import SlotTest from "./pages/slot/SlotTest.vue";
 import StateTest from "./pages/StateTest.vue";
+import Toast from "./pages/utils/Toast.vue";
 
 const routes = [
 	{path: '/', component: Home},
-	{path: '/component_test/ContextMenuTest', component: ContextMenuTest},
-	{path: '/component_test/DialogTest', component: DialogTest},
-	{path: '/component_test/TableTest', component: TableTest},
+	{path: '/components/ContextMenuTest', component: ContextMenuTest},
+	{path: '/components/DialogTest', component: DialogTest},
+	{path: '/components/TableTest', component: TableTest},
 	{path: '/draggable/DraggableDemo', component: DraggableDemo},
 	{path: '/Home', component: Home},
-	{path: '/slot/SlotTest', component: SlotTest},
+	{path: '/slot/slot', component: SlotTest},
 	{path: '/StateTest', component: StateTest},
+	{path: '/utils/Toast', component: Toast},
 ]
 
 import { createRouter, createWebHistory } from 'vue-router';

@@ -1,5 +1,5 @@
 <script setup>
-import {data} from "../../../state";
+import {data} from "./state";
 import {reactive} from "vue";
 
 const r = reactive(data)

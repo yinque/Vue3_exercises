@@ -6,15 +6,15 @@ const router_list = [
 		"component": "Home"
 	},
 	{
-		"path": "/component_test/ContextMenuTest",
+		"path": "/components/ContextMenuTest",
 		"component": "ContextMenuTest"
 	},
 	{
-		"path": "/component_test/DialogTest",
+		"path": "/components/DialogTest",
 		"component": "DialogTest"
 	},
 	{
-		"path": "/component_test/TableTest",
+		"path": "/components/TableTest",
 		"component": "TableTest"
 	},
 	{
@@ -26,12 +26,16 @@ const router_list = [
 		"component": "Home"
 	},
 	{
-		"path": "/slot/SlotTest",
-		"component": "SlotTest"
+		"path": "/slot/slot",
+		"component": "slot"
 	},
 	{
 		"path": "/StateTest",
 		"component": "StateTest"
+	},
+	{
+		"path": "/utils/Toast",
+		"component": "Toast"
 	}
 ]
 </script>

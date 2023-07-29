@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const ROW = 5
-const COL = 5
+const COL = 6
 const Range = (i)=> Array(i).fill(0).map((e,i)=>(i))
 const thead = Array(5).fill(0).map((e,i)=>"表头"+(i+1))
 const head = Range(COL).map(i=>"表头"+(i+1))
