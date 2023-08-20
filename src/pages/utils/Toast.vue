@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {showToast} from "../../utils/toast.js"
+import {showToast} from "../../utils/toast"
 </script>
 
 <template>

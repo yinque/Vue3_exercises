@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "element-plus": "^2.3.9",
     "prettier": "^3.0.0",
     "sass": "^1.63.6",
     "toastify-js": "^1.12.0",

@@ -21,10 +21,15 @@ const default_option = {
 }
 
 export function showToast(options=default_option){
-    if(typeof options==="string"){
+    if(typeof options=="string"){
         const text = options;
         options=default_option;
         options.text = text;
+    }
+    if(!options.text){
+        const text = JSON.stringify(options)
+        options = default_option
+        options.text = text
     }
     Toastify(options).showToast();
 }

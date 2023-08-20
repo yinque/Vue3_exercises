@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import {defineProps} from "vue";
-import {showToast} from "../../utils/toast.js";
+import {showToast} from "../../utils/toast";
 
 const props = defineProps(['id', 'title',"component"])
 

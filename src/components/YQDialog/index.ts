@@ -1,5 +1,5 @@
 /*
-右键菜单组件
+Dialog组件
  */
 import YQDialog from "./YQDialog.vue"
 import {createApp, h} from "vue";
@@ -17,7 +17,10 @@ export function showDialog(component,options={
         title:options.title
     },
         ()=>[h(component,{
-            "onClose":()=>removeRoot(),
+            // "onClose":()=>removeRoot(),
+            on:{
+                close: ()=>removeRoot()
+            },
             ...options.comp_props
         })]
     ))

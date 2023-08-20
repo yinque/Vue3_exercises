@@ -1,6 +1,6 @@
-<script setup>
+<script lang="ts" setup>
 import {defineEmits, defineProps, onMounted, reactive} from "vue";
-import {showToast} from "../../../utils/toast";
+import {showToast} from "src/utils/toast";
 
 // 创建响应式数据
 const formData = reactive({
